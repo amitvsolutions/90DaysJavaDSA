@@ -1,0 +1,19 @@
+## Problem-Statement ##
+This problem is a simple scenario where a cop is searching for a thief who can hide in one of three caves.
+The cop will explore each cave one by one using backtracking, and if the cop finds the thief in the current cave, 
+the search stops; if not, the cop will backtrack and search the next cave. This problem illustrates the backtracking algorithm,
+as the cop makes decisions, explores each possibility, and then undoes the decision if the current choice leads to a dead-end.
+
+## Problem Breakdown:
+1. There are 3 caves (let's label them as Cave 1, Cave 2, Cave 3).
+2. The cop has to search the caves in sequence.
+3. The thief is hidden in one of the caves, and the cop doesn't know where.
+4. The cop will start from Cave 1 and search sequentially:
+   a) Search Cave 1: If the thief is there, the cop is successful.
+   b) Backtrack to Cave 2: If the thief is not in Cave 1, the cop will move to Cave 2.
+   c) Backtrack to Cave 3: If the thief is not in Cave 2, the cop will search Cave 3.
+   
+## Backtracking Steps:
+1. Choice: Search a cave (Cave 1, Cave 2, or Cave 3).
+2. Recursion: If the thief is not found, move on to the next cave.
+3. Backtrack: If a cave doesn't have the thief, undo the search decision and try another cave.  
