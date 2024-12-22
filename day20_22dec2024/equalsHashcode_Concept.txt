@@ -1,0 +1,24 @@
+## Key Points:
+   > equals() Method:
+
+When overriding equals(), you need to ensure consistency in how you compare object fields (e.g., name and age for the Person class).
+The equals() method must be reflexive, symmetric, transitive, and consistent. It should return false for null comparisons, 
+and it must respect the rule: equal objects must have the same hash code.
+
+hashCode() Method:
+
+The hashCode() method provides a hash code that is used by hash-based collections like HashSet, HashMap, etc., 
+to store and retrieve objects efficiently.
+When overriding hashCode(), you must ensure that equal objects must have the same hash code. This ensures proper behavior in hash-based collections.
+
+## When to Override equals() and hashCode():
+You need to override both methods when you are using your custom objects as keys in a HashMap or storing them in a HashSet because these collections rely on both methods to determine object equality and efficient storage.
+
+## General Guidelines:
+Override equals() when you need to compare object contents for equality.
+Override hashCode() to ensure consistent behavior in hash-based collections (if equals() is overridden).
+
+## Conclusion:
+In Java, equals() and hashCode() are crucial for object comparison and effective usage in collections. They need to 
+be overridden when you want to compare the content of objects rather than their memory references, especially for objects 
+used in collections like HashSet or as keys in HashMap.
