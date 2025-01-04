@@ -1,0 +1,16 @@
+Explanation:
+Encapsulation:
+The Person class has private fields (name, age), which can only be accessed via getter methods (getName(), getAge()).
+Similarly, the Patient and Doctor classes encapsulate their fields (patientId, disease, doctorId, specialization) and
+provide getter methods to access them.
+
+Inheritance:
+The Patient and Doctor classes inherit from the abstract class Person. This allows them to share common properties (such as name and age)
+and behavior (the displayDetails() method). Both the Patient and Doctor classes implement their own version of the displayDetails() method, 
+which makes use of the inherited properties from the Person class.
+
+Abstraction:
+The Person class is abstract, meaning it cannot be instantiated directly. It provides a blueprint for Patient and Doctor classes, 
+but it leaves the implementation of the displayDetails() method to its subclasses. The details of how the displayDetails() method works
+for Patient and Doctor are abstracted from the users of these classes. All they need to know is that they can call displayDetails() on
+any Person object (or its subclasses), and the appropriate details will be displayed.
