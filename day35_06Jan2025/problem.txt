@@ -1,0 +1,3 @@
+The goal is to maximize the number of partitions, ensuring that each character appears in at most one partition,
+and the partitions, when concatenated, must form the original string exactly as it was, without splitting any 
+characters across multiple partitions.
